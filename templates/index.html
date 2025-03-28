@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Flower Prediction</title>
+</head>
+<body>
+    <div class="box">
+        <div class="box1">
+            <h1 class="iris"><b>Iris Flower Species Prediction</b></h1>
+        </div>
+    </div>
+    <div class="container">
+        <form action="/predict" method="post" class="frm">
+            <label for="sepal_length">Sepal Length (cm):</label>
+            <input type="text" name="sepal length (cm)" placeholder="sepal length" required><br>
+        
+            <label for="sepal_width">Sepal Width (cm):</label>
+            <input type="text" name="sepal width (cm)" placeholder="sepal width" required><br>
+        
+            <label for="petal_length">Petal Length (cm):</label>
+            <input type="text" name="petal length (cm)" placeholder="petal length" required><br>
+        
+            <label for="petal_width">Petal Width (cm):</label>
+            <input type="text" name="petal width (cm)" placeholder="petal width" required><br>
+            
+            <button type="submit" class="btn"><b>Submit</b></button>
+        </form>
+
+        {% if image_file %}
+        <div class="im">
+            <img src="{{ url_for('static', filename=image_file) }}" alt="Predicted Flower Image">
+            <div class="output-box">
+                {{ prediction_text }}
+            </div>
+        </div>
+        {% endif %}
+    </div>
+    
+</body>
+</html>

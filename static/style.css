@@ -1,0 +1,104 @@
+body {
+    background-image: url(pexels-pixabay-235683.jpg);
+    background-size: cover; /* Ensure the background image covers the entire body */
+    background-position: center; /* Center the background image */
+    margin: 0; /* Remove default margin */
+}
+
+.iris {
+    color: rgb(0, 209, 250);
+    padding: 2% 0; /* Padding for top and bottom */
+    text-align: center;
+    border-radius: 21%;
+}
+
+.box {
+    background-image: url(pexels-pixabay-235683.jpg);
+    padding: 0 13%; /* Horizontal padding */
+    margin-top: 2px; /* Center the box with top/bottom margin */
+    margin-left: 13px;
+    width: 70%;
+    max-width: 800px; /* Set a max width for larger screens */
+    border: 2px solid;
+    border-radius: 8px;
+}
+
+.box1 {
+    display: flex; 
+    border: 2px solid;
+    background-color: rgba(110, 81, 138, 0.5); 
+    backdrop-filter: blur(90%); 
+    justify-content: center; 
+    align-items: center;
+    height: auto; /* Allow dynamic height */
+    border-radius: 10px;
+}
+
+.container {
+    display: flex; /* Use flexbox for horizontal arrangement */
+    justify-content: space-between; /* Space between form and image */
+    align-items: flex-start; /* Align items at top */
+    margin-top: 10px;
+    margin: 10px auto; /* Center and add margin */
+    width: 80%; /* Set a width for the container */
+    max-width: 800px; /* Limit max width */
+}
+
+.frm {
+    background-color: rgba(110, 81, 138, 0.5); /* Semi-transparent */
+    backdrop-filter: blur(90%);
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 20px; 
+    width: 50%; /* Full width of its parent */
+    border-radius: 10px;
+    margin-left: 20%;
+    font-size: x-large;
+}
+
+.frm input {
+    margin: 20px 0; 
+    padding: 3px; 
+    width: 80%; /* Adjusted width to fill container */
+    border-radius: 5px; 
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: rgb(193, 255, 49);
+    color: rgb(63, 101, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.output-box {
+    background-color: #e3f2fd; 
+    color: #2196f3; 
+    padding: 12px; 
+    border: 1px solid #2196f3; 
+    border-radius: 5px; 
+    margin: 20px auto; /* Centering the output box */
+    font-weight: bold; 
+    font-size: large;
+    display: inline-block; 
+    margin-top: 10%;
+    margin-right: 12%;
+    margin-left: 16%;
+}
+
+.im {
+    display: inline-block;
+    margin-left: 20px; /* Provide spacing from the form */
+}
+
+
+.im img {
+    width: 232px; /* Set desired width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: for rounded corners */
+    margin-top: 20%;
+    margin-left: 17%;
+}
